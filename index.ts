@@ -1,3 +1,3 @@
-import 'gadget-box/components/styles'
+import '@gadget-box/components/styles'
 
-export * from 'gadget-box/components'
+export * from '@gadget-box/components'

@@ -22,9 +22,9 @@
   "scripts": {
     "dev:play": "pnpm --dir playground dev",
     "dev:docs": "pnpm --dir docs dev",
-    "build": "pnpm --recursive --filter gadget-box/* build && vue-tsc --noEmit && vite build",
+    "build": "pnpm --recursive --filter @gadget-box/* build && vue-tsc --noEmit && vite build",
     "build:docs": "pnpm --dir docs build",
-    "build:components": "pnpm --filter gadget-box/components build",
+    "build:components": "pnpm --filter @gadget-box/components build",
     "prepare": "husky",
     "prepublishOnly": "tsx scripts/pre-publish-only.ts",
     "postpublish": "tsx scripts/post-publish.ts"
@@ -33,7 +33,7 @@
     "vue": "^3.2.0"
   },
   "dependencies": {
-    "gadget-box/components": "workspace:*"
+    "@gadget-box/components": "workspace:*"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
