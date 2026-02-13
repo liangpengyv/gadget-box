@@ -16,7 +16,8 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "scripts": {
     "dev:play": "pnpm --dir playground dev",
