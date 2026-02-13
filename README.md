@@ -8,11 +8,11 @@
 
 ## 了解它
 
-👉 [Gadget Box 简介](http://192.168.0.192/guide/introduction.html)
+👉 [Gadget Box 简介](https://gadget-box.laoliang.ink/guide/introduction.html)
 
 ## 查阅文档
 
-👉 [组件概览](http://192.168.0.192/components/overview.html)
+👉 [组件概览](https://gadget-box.laoliang.ink/components/overview.html)
 
 ## Playground
 
@@ -20,8 +20,8 @@
 
 ## 变更日志
 
-👉 [变更日志](http://192.168.0.192/guide/changelog.html)
+👉 [变更日志](https://gadget-box.laoliang.ink/guide/changelog.html)
 
 ## 参与贡献
 
-👉 [开发指南](http://192.168.0.192/guide/develop-guide.html)
+👉 [开发指南](https://gadget-box.laoliang.ink/guide/develop-guide.html)
