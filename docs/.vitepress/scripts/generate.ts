@@ -16,7 +16,7 @@ ${exports}
 };
 `
 
-  await fse.writeFile(COMPONENTS_DEMOS_ENTRY_PATH, content)
+  await fse.outputFile(COMPONENTS_DEMOS_ENTRY_PATH, content)
 }
 
 const main = async () => {
