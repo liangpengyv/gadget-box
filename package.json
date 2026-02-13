@@ -1,0 +1,78 @@
+{
+  "name": "gadget-box",
+  "version": "0.0.1-alpha.202602131903",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles": "./dist/index.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "dev:play": "pnpm --dir playground dev",
+    "dev:docs": "pnpm --dir docs dev",
+    "build": "pnpm --recursive --filter gadget-box/* build && vue-tsc --noEmit && vite build",
+    "build:docs": "pnpm --dir docs build",
+    "build:components": "pnpm --filter gadget-box/components build",
+    "prepare": "husky",
+    "prepublishOnly": "tsx scripts/pre-publish-only.ts",
+    "postpublish": "tsx scripts/post-publish.ts"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "gadget-box/components": "workspace:*"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/fs-extra": "^11.0.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/compiler-sfc": "^3.5.13",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "fast-glob": "^3.3.2",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.2.0",
+    "globals": "^15.13.0",
+    "husky": "^9.1.7",
+    "less": "^4.2.1",
+    "lint-staged": "^15.2.10",
+    "markdown-it-task-checkbox": "^1.0.6",
+    "postcss": "^8.4.49",
+    "postcss-html": "^1.7.0",
+    "postcss-less": "^6.0.0",
+    "prettier": "3.4.2",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard": "^36.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.17.0",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0",
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13",
+    "vue-component-meta": "^2.1.10",
+    "vue-tsc": "^2.1.10"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "20.18.1",
+    "pnpm": "9.14.4"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "20.18.1",
+      "onFail": "error"
+    }
+  }
+}
