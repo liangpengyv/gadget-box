@@ -15,6 +15,9 @@
     "./styles": "./dist/index.css",
     "./package.json": "./package.json"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev:play": "pnpm --dir playground dev",
     "dev:docs": "pnpm --dir docs dev",
